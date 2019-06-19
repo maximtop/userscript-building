@@ -1,0 +1,31 @@
+{
+  "name": "userscript-building",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Maxim Topchu <maximtop@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "rollup": "rollup -c",
+    "webpack": "webpack",
+    "babel": "babel src/index.js -o dist/bundle.js"
+  },
+  "dependencies": {
+    "core-js-pure": "^3.1.4",
+    "@babel/runtime-corejs3": "^7.4.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "rollup": "^1.15.5",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.3",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-userscript": "^2.3.0"
+  }
+}
