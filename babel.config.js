@@ -9,16 +9,14 @@ module.exports = function (api) {
       corejs: 3,
       targets: [
         'IE 11',
-        'last 2 versions',
-        '> 1%',
       ]
     },
   ]];
 
   const plugins = [
-    ['@babel/plugin-transform-runtime',
+    ['@babel/transform-runtime',
       {
-        corejs: 3,
+        corejs: "3"
       }
     ]
   ];
